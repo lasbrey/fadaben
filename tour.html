@@ -1,73 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FadaBen</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/acd2739357.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FadaBen</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://use.fontawesome.com/acd2739357.js"></script>
-</head>
+  <body style="background: #808080">
+    <!-- site header -->
 
-<body class="bg-gray-200">
-  <!-- site header -->
-
-  <nav class="bg-gray-100 border-gray-200 px-2 sm:px-4 py-8">
-    <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="https://FadaBen.com/" class="flex items-center">
-        <!-- <img src="https://FadaBen.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="FadaBen Logo"> -->
-        <span class="self-center  font-semibold whitespace-nowrap text-5xl">FadaBen</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button"
-        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
-        aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto " id="navbar-default">
-        <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
-          <li>
-            <a href="index.html" class="block py-2 pr-4 pl-3  bg-red-700 font-bold md:bg-transparent md:p-0"
-              aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="bio.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">BIO</a>
-          </li>
-          <li>
-            <a href="music.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">Music</a>
-          </li>
-          <li>
-            <a href="tour.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">TOUR</a>
-          </li>
-          <li>
-            <a href="videos.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">VIDEOS</a>
-          </li>
-          <li>
-            <a href="gallery.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">PHOTO</a>
-          </li>
-        </ul>
+    <div class="xl:absolute top-0 xl:left-[45%] hidden xl:block">
+      <div class="flex justify-center items-center">
+        <a href="/" class="">
+          <img
+            src="assets/img/logo.png"
+            class="mr-3 h-9 xl:h-20 md:h-20"
+            alt="FadaBen Logo"
+          />
+        </a>
       </div>
     </div>
-  </nav>
+    <!-- navigation start -->
+    <nav
+      class="bg-gray-600 px-2 sm:px-4 py-2.5 w-full z-20 bg-0 left-0 border-b border-gray-200"
+      style="background: #a6a6a6"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <!-- first order -->
+        <div
+          class="hidden justify-between items-center w-full md:flex md:w-auto md:order-3"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Bio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Music</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Tour</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Video</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Photos</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- second order -->
+        <div class="flex justify-center items-center xl:hidden md:order-1">
+          <a href="/" class="">
+            <img
+              src="assets/img/logo.png"
+              class="mr-3 h-9 xl:h-20 md:h-20"
+              alt="FadaBen Logo"
+            />
+          </a>
+        </div>
+        <!-- third order -->
+        <div class="flex md:order-2">
+          <div
+            style="font-size: 0px"
+            class="text- font-medium px-5 py-2.5 text-center mr-3 md:mr-0 xl:block md:block sm:hidden"
+          >
+            <p>
+              <span class="text-gray-800 text-5xl">Fada</span>
+              <span class="text-red-700 text-5xl">Ben</span>
+            </p>
+          </div>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
   <!-- site header ends -->
 <section>
     <!-- tours -->
     <div class="mt-20 p-2 w-full">
-      <h1 class="text-center text-5xl font-serif mb-10">FADABEN ON TOUR</h1>
-      <div class="bg-white h-[35rem] w-3/4 w-full mx-auto">
+      <h1 class="text-center text-5xl font-serif mb-10 text-red-400">FADABEN ON TOUR</h1>
+      <div class="bg-white h-[35rem] xl:w-3/4 md:w-3/4 mx-auto">
         <div class="">
-          <div class="flex justify-between p-2 border-gray-300 border-t border-b">
+          <div class="flex justify-between p-2 border-gray-300 border-t border-b text-sm">
             <div>
               Upcoming Shows / <span class="text-gray-300"> Local Dates</span>
             </div>

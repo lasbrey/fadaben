@@ -4,11 +4,11 @@ html{
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-.topdeclared{
+/* .topdeclared{
     position: relative;
     margin:130px 0px 10px calc((100% - 980px) * 0.5);
     left:-122px;
-}
+} */
 .circle{
   border-radius: 50%;  
 }

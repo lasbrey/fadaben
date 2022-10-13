@@ -1,277 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FadaBen</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/acd2739357.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FadaBen</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://use.fontawesome.com/acd2739357.js"></script>
-</head>
+  <body style="background: #808080">
+    <!-- site header -->
 
-<body>
-  <!-- site header -->
-
-  <nav class="bg-gray-100 border-gray-200 px-2 sm:px-4 py-8">
-    <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="https://FadaBen.com/" class="flex items-center">
-        <!-- <img src="https://FadaBen.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="FadaBen Logo"> -->
-        <span class="self-center text-xl font-semibold whitespace-nowrap text-5xl">FadaBen</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button"
-        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
-        aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto " id="navbar-default">
-        <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
-          <li>
-            <a href="index.html" class="block py-2 pr-4 pl-3  bg-red-700 font-bold md:bg-transparent md:p-0"
-              aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="bio.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">BIO</a>
-          </li>
-          <li>
-            <a href="music.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">Music</a>
-          </li>
-          <li>
-            <a href="tour.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">TOUR</a>
-          </li>
-          <li>
-            <a href="videos.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">VIDEOS</a>
-          </li>
-          <li>
-            <a href="gallery.html"
-              class="block py-2 pr-4 pl-3 text-gray-700 font-bold hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 ">PHOTO</a>
-          </li>
-        </ul>
+    <div class="xl:absolute top-0 xl:left-[45%] hidden xl:block">
+      <div class="flex justify-center items-center">
+        <a href="/" class="">
+          <img
+            src="assets/img/logo.png"
+            class="mr-3 h-9 xl:h-20 md:h-20"
+            alt="FadaBen Logo"
+          />
+        </a>
       </div>
     </div>
-  </nav>
-  <!-- site header ends -->
-
-  <!-- mailing list -->
-  <section class="topdeclared">
-    <div class="grid gap-10 mb-8 xl:grid-cols-2 grid-cols-1">
-      <!-- grid section 1 -->
-      <div class=" w-[30em] max-h-[41rem]">
-        <!-- image is 524 by 643 -->
-        <img src="assets/img/0S2A8239.jpg" class="h-full w-full">
+    <!-- navigation start -->
+    <nav
+      class="bg-gray-600 px-2 sm:px-4 py-2.5 w-full z-20 bg-0 left-0 border-b border-gray-200"
+      style="background: #a6a6a6"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <!-- first order -->
+        <div
+          class="hidden justify-between items-center w-full md:flex md:w-auto md:order-3"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Bio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Music</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Tour</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Video</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-700 md:p-0"
+                >Photos</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- second order -->
+        <div class="flex justify-center items-center xl:hidden md:order-1">
+          <a href="/" class="">
+            <img
+              src="assets/img/logo.png"
+              class="mr-3 h-9 xl:h-20 md:h-20"
+              alt="FadaBen Logo"
+            />
+          </a>
+        </div>
+        <!-- third order -->
+        <div class="flex md:order-2">
+          <div
+            style="font-size: 0px"
+            class="text- font-medium px-5 py-2.5 text-center mr-3 md:mr-0 xl:block md:block sm:hidden"
+          >
+            <p>
+              <span class="text-gray-800 text-5xl">Fada</span>
+              <span class="text-red-700 text-5xl">Ben</span>
+            </p>
+          </div>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
-      <!-- grid section 2 -->
-      <div class="xl:mt-20">
-        <div class="w-3/4">
-          <h1 class="text-center text-3xl font-bold mb-20 font-sans"> JOIN MY MAILING LIST </h1>
-          <form class="">
-            <div class="one">
-              <input type="text"
-                class="mt-4 p-8 focus:ring-indigo-500 text-xl placeholder:text-xl focus:border-indigo-500 block border-1 w-full shadow-xl sm:text-sm border-slate-800 placeholder:font-semibold"
-                placeholder="Full Name" />
-              <input type="email"
-                class="mt-4 p-8 focus:ring-indigo-500 text-xl placeholder:text-xl focus:border-indigo-500 block border-1 w-full shadow-xl sm:text-sm border-slate-800 placeholder:font-semibold"
-                placeholder="Email" />
-              <button
-                class="mt-4 shadow-xl w-full bg-gray-100 text-red-400 hover:text-white hover:bg-red-400 p-2 text-2xl inline-flex text-center items-center justify-center">
-                Submit
-                <svg aria-hidden="true" class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </button>
+    </nav>
+    <!-- navigation end -->
+    <!-- site header ends -->
+
+    <!-- Welcome list -->
+    <section class="topdeclared xl:m-24">
+      <div class="grid gap-10 mb-8 xl:grid-cols-2 grid-cols-1">
+        <!-- grid section 1 -->
+        <div class="">
+          <img
+            class="max-w-lg h-auto rounded-lg transition-all duration-300 blur-none hover:blur-sm"
+            src="assets/img/newbg.JPG"
+            alt="image description"
+          />
+        </div>
+        <!-- grid section 2 -->
+        <div class="flex justify-center items-center">
+          <div class="">
+            <div>
+              <div class="text-7xl">
+                Welcome to the official online home of
+                <span style="background: #6b6b6b">FadaBen</span>
+              </div>
+              <p class="text-xl text-gray-800">
+                Bringing art to life through his music. With his excellent
+                guitar playing technique, his soulful voice and a unique
+                songwriting style, he captures not only the ears of his
+                listeners but also their hearts.
+              </p>
             </div>
-          </form>
-          <!-- socials -->
-          <div class="flex justify-between space-x-2 mt-20 p-4">
+            <!-- socials -->
+            <div class="flex justify-between space-x-2 mt-12 p-4">
+              <a href="#!" role="button">
+                <!-- Youtube -->
+                <i
+                  class="fa fa-youtube text-2xl hover:text-red-700 hover:text-4xl"
+                ></i>
+              </a>
+              <a href="#!" role="button">
+                <!-- Instagram -->
+                <i
+                  class="fa fa-instagram text-2xl hover:text-red-700 hover:text-4xl"
+                ></i>
+              </a>
+              <a href="#!" role="button">
+                <!-- Facebook -->
+                <i
+                  class="fa fa-facebook text-2xl hover:text-red-700 hover:text-4xl"
+                ></i>
+              </a>
+              <a href="#!" role="button">
+                <!-- Twitter -->
+                <i
+                  class="fa fa-twitter text-2xl hover:text-red-700 hover:text-4xl"
+                ></i>
+              </a>
 
-            <a href="#!" role="button">
-              <!-- Tiktok -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7" style="color: #000;">
-                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path fill="currentColor"
-                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-              </svg>
-            </a>
-
-            <a href="#!" role="button">
-              <!-- Facebook -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-7 h-7" style="color: #000;">
-                <path fill="currentColor"
-                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-              </svg>
-            </a>
-
-            <a href="#!" role="button">
-              <!-- Instagram -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7" style="color: #000;">
-                <path fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-              </svg>
-            </a>
-
-            <a href="#!" role="button">
-              <!-- Youtube -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-7 h-7" style="color: #000;">
-                <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                <path fill="currentColor"
-                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
-              </svg>
-            </a>
-
-            <a href="#!" role="button">
-              <!-- Google -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" class="w-7 h-7" style="color: #000;">
-                <path fill="currentColor"
-                  d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
-              </svg>
-            </a>
-
-            <a href="#!" role="button">
-              <!-- Twitter -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-7 h-7" style="color: #000;">
-
-                <path fill="currentColor"
-                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-              </svg>
-            </a>
+              <a href="#!" role="button">
+                <!-- Apple MUsic -->
+                <i
+                  class="fa fa-apple text-2xl hover:text-red-700 hover:text-4xl"
+                ></i>
+              </a>
+              <a href="#!" role="button">
+                <!-- Spotify -->
+                <i
+                  class="fa fa-spotify text-2xl hover:text-red-700 hover:text-4xl"
+                ></i>
+              </a>
+              <a href="#!" role="button">
+                <!-- soundcloud -->
+                <i
+                  class="fa fa-soundcloud text-2xl hover:text-red-700 hover:text-4xl"
+                ></i>
+              </a>
+              <a href="#!" role="button" class="flex">
+                <!-- Tiktok -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="w-5 hover:text-red-700 hover:w-8"
+                >
+                  <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    fill="currentColor"
+                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- album section -->
-  <section class="bg-grey-200 p-40 w-1/2">
-    <div class="bg-white p-2  flex justify-between  mb-5">
-      <div class="">
-        <h1>STRIPPED BY LAZARUS</h1>
-        <p>FadaBen</p>
-      </div>
-      <div class=" ">
-        <h6 class="border border-gray-300 px-2">Download Album</h6>
-      </div>
-    </div>
-    <!-- songs -->
-    <div>
-      <div class="border-t border-gray-300 border-b py-5 flex justify-between">
-        <div class="text-gray-800">
-          <span class="border circle border-gray-700 py-3 px-4"><i class=" fa fa-solid fa-play"></i></span>
-          Intro
-        </div>
-        <div>
-          <p class="text-sm text-gray-400">00:22</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bio section -->
-  <section class="bg-red-100 p-5">
-    <div class="border-t border-slate-500 m-10 mb-5"></div>
-    <section class="pt-10 pb-10 mb-8 flex justify-center ">
-      <div class="text-center w-full xl:w-3/4">
-        <h1 class="text-red-800 text-5xl mb-2">BIO</h1>
-        <p class="text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, laudantium deserunt.
-          Maiores,
-          ratione
-          necessitatibus? Amet, dolor asperiores enim consequatur quaerat accusamus non molestiae, aspernatur dolorem,
-          quod consequuntur doloribus rerum esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-          voluptates
-          quasi modi ratione itaque quaerat qui molestias enim. Sed obcaecati consequatur excepturi magnam, repellendus
-          officia esse amet corporis fuga facilis?</p>
       </div>
     </section>
-    <div class="border-t border-slate-500 m-10"></div>
-    <!-- tours -->
-    <div class="mt-20 p-2 w-full">
-      <h1 class="text-center text-5xl font-serif mb-10">The Misty Mountain Road Tour</h1>
-      <div class="bg-white h-[35rem] w-3/4 w-full mx-auto">
-        <div class="">
-          <div class="flex justify-between p-2 border-gray-300 border-t border-b">
-            <div>
-              Upcoming Shows / <span class="text-gray-300"> Local Dates</span>
+
+    <section class="grid grid-cols-2 gap-2 xl:m-24">
+      <!-- section 1 -->
+      <div>
+        <div class="w-3/4">
+          <div class="bg-grey-200">
+            <div class="p-2 flex justify-between mb-5">
+              <div class="">
+                <h1>STRIPPED BY LAZARUS</h1>
+                <p>FadaBen</p>
+              </div>
+              <div class=" ">
+                <h6
+                  class="border border-gray-300 px-2 hover:bg-red-700 hover:text-white hover:cursor-pointer hover:border-0"
+                >
+                  Download Album
+                </h6>
+              </div>
             </div>
+            <!-- songs -->
             <div>
-              Track Artist
+              <div
+                class="border-t border-gray-300 border-b py-5 flex justify-between"
+              >
+                <div class="text-gray-800">
+                  <span class="border circle border-gray-700 py-3 px-4"
+                    ><i class="fa fa-solid fa-play"></i
+                  ></span>
+                  Intro
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">00:22</p>
+                </div>
+              </div>
+              <div
+                class="border-t border-gray-300 border-b py-5 flex justify-between"
+              >
+                <div class="text-gray-800">
+                  <span class="border circle border-gray-700 py-3 px-4"
+                    ><i class="fa fa-solid fa-play"></i
+                  ></span>
+                  How Great Thou Art
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">3:10</p>
+                </div>
+              </div>
+              <div
+                class="border-t border-gray-300 border-b py-5 flex justify-between"
+              >
+                <div class="text-gray-800">
+                  <span class="border circle border-gray-700 py-3 px-4"
+                    ><i class="fa fa-solid fa-play"></i
+                  ></span>
+                  The Light
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">3:05</p>
+                </div>
+              </div>
+              <div
+                class="border-t border-gray-300 border-b py-5 flex justify-between"
+              >
+                <div class="text-gray-800">
+                  <span class="border circle border-gray-700 py-3 px-4"
+                    ><i class="fa fa-solid fa-play"></i
+                  ></span>
+                  Amazing Grace
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">2:22</p>
+                </div>
+              </div>
+              <div
+                class="border-t border-gray-300 border-b py-5 flex justify-between"
+              >
+                <div class="text-gray-800">
+                  <span class="border circle border-gray-700 py-3 px-4"
+                    ><i class="fa fa-solid fa-play"></i
+                  ></span>
+                  Lost Soul
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">04:22</p>
+                </div>
+              </div>
+              <div
+                class="border-t border-gray-300 border-b py-5 flex justify-between"
+              >
+                <div class="text-gray-800">
+                  <span class="border circle border-gray-700 py-3 px-4"
+                    ><i class="fa fa-solid fa-play"></i
+                  ></span>
+                  The Great Fall
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">02:34</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="text-center">
-            <h1 class="text-5xl mt-5">No Upcoming Shows</h1>
           </div>
         </div>
       </div>
-      <div class="text-center ">
-        <button class="text-xl bg-red-800 text-white p-3 mt-2">MORE DATES</button>
+      <!-- section 2 -->
+      <div>
+        <div class="">
+          <img
+            class="max-w-lg h-auto rounded-lg transition-all duration-300 blur-none hover:blur-sm"
+            src="assets/img/albulm2.jpg"
+            alt="image description"
+          />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <section class="bg-red-800 p-10 ">
-    <div class="flex justify-center space-x-3 text-gray-700">
+    <!-- Bio section -->
+    <section class="p-5 xl:m-24">
+      <div class="xl:grid xl:grid-cols-2 grid-cols-1  gap-10 ">
+        <!-- grid 1 -->
 
-      <!-- Facebook -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-5 h-5 " style="color: #fff;">
-        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-        <path fill="currentColor"
-          d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-      </svg>
+        <div>
+          <div class="">
+            <img
+              class="max-w-lg h-auto rounded-lg transition-all duration-300 blur-none hover:blur-sm"
+              src="assets/img/about.JPG"
+              alt="image description"
+            />
+          </div>
+        </div>
+        <!-- grid 2 -->
+        <div class="">
+          <h1 class="text-4xl text-red-700 mb-10">BIO</h1>
+          <ol class="relative border-l border-gray-200 dark:border-gray-700">
+            <li class="mb-10 ml-4">
+              <div
+                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
+              ></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-200"
+                >February 2022</time
+              >
+              <p class="mb-4 text-base font-normal text-black">
+                This year was marked by a few important collaborations with RamZ
+                and Helen Williams, and a new release.
+              </p>
+            </li>
+            <li class="mb-10 ml-4">
+              <div
+                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
+              ></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-200"
+                >February 2022</time
+              >
+              <p class="mb-4 text-base font-normal text-black">
+                This year was marked by a few important collaborations with RamZ
+                and Helen Williams, and a new release.
+              </p>
+            </li>
+            <li class="mb-10 ml-4">
+              <div
+                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
+              ></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-200"
+                >February 2022</time
+              >
+              <p class="mb-4 text-base font-normal text-black">
+                This year was marked by a few important collaborations with RamZ
+                and Helen Williams, and a new release.
+              </p>
+            </li>
+            <li class="mb-10 ml-4">
+              <div
+                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
+              ></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-200"
+                >February 2022</time
+              >
+              <p class="mb-4 text-base font-normal text-black">
+                This year was marked by a few important collaborations with RamZ
+                and Helen Williams, and a new release.
+              </p>
+            </li>
+            <li class="mb-10 ml-4">
+              <div
+                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"
+              ></div>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-200"
+                >February 2022</time
+              >
+              <p class="mb-4 text-base font-normal text-black">
+                This year was marked by a few important collaborations with RamZ
+                and Helen Williams, and a new release.
+              </p>
+            </li>
+          </ol>
+          <button class="bg-red-700 text-white p-2">READ MORE</button>
+        </div>
+      </div>
 
-      <!-- Messenger -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5" style="color: #fff;">
-        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-        <path fill="currentColor"
-          d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z" />
-      </svg>
+      <!-- tours -->
+      <div class="mt-20 p-2 w-full">
+        <h1 class="text-center text-5xl font-serif mb-10">
+          The Misty Mountain Road Tour
+        </h1>
+        <div class="bg-white h-[35rem] w-3/4 w-full mx-auto">
+          <div class="">
+            <div
+              class="flex justify-between p-2 border-gray-300 border-t border-b"
+            >
+              <div>
+                Upcoming Shows / <span class="text-gray-300"> Local Dates</span>
+              </div>
+              <div>Track Artist</div>
+            </div>
+            <div class="text-center">
+              <h1 class="text-5xl mt-5">No Upcoming Shows</h1>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="text-xl bg-red-800 text-white p-3 mt-2">
+            MORE DATES
+          </button>
+        </div>
+      </div>
+    </section>
 
-      <!-- Twitter -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5" style="color: #fff;">
-        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-        <path fill="currentColor"
-          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-      </svg>
+    <!-- Footer -->
+    <section class="bg-red-800 p-10">
+      <div class="flex justify-center space-x-3 text-gray-700">
+        <!-- Facebook -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+          class="w-5 h-5"
+          style="color: #fff"
+        >
+          <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            fill="currentColor"
+            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+          />
+        </svg>
 
-      <!-- Google -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" class="w-5 h-5" style="color: #fff;">
-        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-        <path fill="currentColor"
-          d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
-      </svg>
+        <!-- Messenger -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="w-5 h-5"
+          style="color: #fff"
+        >
+          <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            fill="currentColor"
+            d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"
+          />
+        </svg>
 
-      <!-- Instagram -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5" style="color: #fff;">
-        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-        <path fill="currentColor"
-          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-      </svg>
-    </div>
-    <div>
-      <h1 class="text-center text-red-200 text-3xl mt-10">JOIN THE FAMILY</h1>
-    </div>
-    <div class=" flex justify-center mt-10 mb-20">
-      <input type="email" name="email" id="email" class="border-2 border-white bg-transparent p-2 h-10 xl:w-80"
-        placeholder="Enter email address">
-      <input type="button" value="SUBSCRIBE" class="text-red-800 bg-red-200 p-2 h-10 ml-5">
-    </div>
-    <div class="text-center text-red-200">
-      <h2>BOOKING</h2>
-      <h5>example@gmail.com</h5>
-    </div>
-  </section>
-</body>
+        <!-- Twitter -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="w-5 h-5"
+          style="color: #fff"
+        >
+          <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            fill="currentColor"
+            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+          />
+        </svg>
 
+        <!-- Google -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 488 512"
+          class="w-5 h-5"
+          style="color: #fff"
+        >
+          <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            fill="currentColor"
+            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+          />
+        </svg>
+
+        <!-- Instagram -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="w-5 h-5"
+          style="color: #fff"
+        >
+          <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            fill="currentColor"
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+          />
+        </svg>
+      </div>
+      <div>
+        <h1 class="text-center text-red-200 text-3xl mt-10">JOIN THE FAMILY</h1>
+      </div>
+      <div class="flex justify-center mt-10 mb-20">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="border-2 border-white bg-transparent p-2 h-10 xl:w-80"
+          placeholder="Enter email address"
+        />
+        <input
+          type="button"
+          value="SUBSCRIBE"
+          class="text-red-800 bg-red-200 p-2 h-10 ml-5"
+        />
+      </div>
+      <div class="text-center text-red-200">
+        <h2>BOOKING</h2>
+        <h5>example@gmail.com</h5>
+      </div>
+    </section>
+  </body>
 </html>
